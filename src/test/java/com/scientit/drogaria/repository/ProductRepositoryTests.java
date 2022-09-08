@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.scientit.drogaria.domain.Categoria;
 import com.scientit.drogaria.domain.Producto;
 
 @SpringBootTest
@@ -21,14 +22,14 @@ public class ProductRepositoryTests {
         "Coca-Cola",
         Byte.valueOf("15"),
         BigDecimal.valueOf(10.50),
-        LocalDate.of(2022, 9, 21));
+        LocalDate.of(2022, 9, 21), null);
 
     Producto producto2 = new Producto(
         null,
-        "Heineken",
+        "pão doce",
         Byte.valueOf("10"),
         BigDecimal.valueOf(8.50),
-        LocalDate.of(2022, 9, 25));
+        LocalDate.of(2022, 9, 25), null);
 
     productoRepository.save(producto1);
     productoRepository.save(producto2);

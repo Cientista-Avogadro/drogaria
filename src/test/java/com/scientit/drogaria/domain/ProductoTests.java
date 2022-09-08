@@ -11,12 +11,13 @@ public class ProductoTests {
 
   @Test
   public void criar() {
+
     Producto producto = new Producto(
-        Short.valueOf("1"),
-        "Coca-Cola",
-        Byte.valueOf("15"),
+        Short.valueOf("2"),
+        "maçã",
+        Byte.valueOf("5"),
         BigDecimal.valueOf(10.50),
-        LocalDate.of(2022, 9, 21));
+        LocalDate.of(2022, 9, 21), null);
 
     System.out.println("test" + producto);
   }
